@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="RestaurantGuide.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="using:RestaurantGuide"
+    mc:Ignorable="d"
+    Title="Ресторанний гід"
+    Height="450"
+    Width="800">
+
+    <StackPanel Padding="20">
+        <ListView x:Name="RestaurantList" Height="250" SelectionMode="Single" DisplayMemberPath="Name"/>
+
+        <StackPanel Orientation="Horizontal" Margin="0,10,0,0" Spacing="10">
+            <Button Content="Додати" Click="Add_Click"/>
+            <Button Content="Редагувати" Click="Edit_Click"/>
+            <Button Content="Видалити" Click="Delete_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
